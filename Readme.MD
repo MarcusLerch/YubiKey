@@ -25,12 +25,13 @@ Contains v4.0.30319 of the compiled libraries.
 
 ## Installation
 
-Download from this Repo and keep the DLLs and the YubiKey.ps1 script in the same directory. Import the functions by running the YubiKey.ps1 with a dot prefix. 
+Download from this Repo and keep the DLLs and the YubiKey.ps1 script in the same directory. Import the functions by running the YubiKey.ps1 with a dot prefix.
 
 ```powershell
 . .\YubiKey.ps1
 ```
-![](./examples/Load-YubiKeyFunctions.png)
+
+![Screenshot of a PowerShell window where Yubikey.ps1 script is executed](./examples/Load-YubiKeyFunctions.png)
 
 ## How to use
 
@@ -41,7 +42,7 @@ Download from this Repo and keep the DLLs and the YubiKey.ps1 script in the same
 Find-YubiKeyDevices 
 ```
 
-![](./examples/Find-YubiKeyDevices.png)
+![Screenshot of a PowerShell window where function Find-YubikeyDevices is executed](./examples/Find-YubiKeyDevices.png)
 
 ### Return device information for a specific connected Yubico YubiKey
 
@@ -51,7 +52,7 @@ Find-YubiKeyDevices
 Get-YubiKeyDevice -SerialNumber 12345
 ```
 
-![](./examples/Get-YubiKeyDevice.png)
+![Screenshot of a PowerShell window where function Get-YubikeyDevice is executed](./examples/Get-YubiKeyDevice.png)
 
 ### Find and return a specific certificate from a Yubico YubiKey
 
@@ -64,13 +65,11 @@ Certificate Slot to return the certificate from
 - Slot 9d 'KeyManagement'
 - Slot 9e 'CardAuthentication'
 
-
 PARAMETER SerialNumber
 
 SerialNumber of the YubiKey
 
 Can be found using Find-YubiKeyDevices
-
 
 PARAMETER Raw
 
@@ -100,10 +99,10 @@ Get-YubiKeyCertificate -CertSlot CardAuthentication -SerialNumber 15464990 -Raw 
 
 ## Example Output
 
-![](./examples/Get-YubiKeyCertificate.png)
+![Screenshot of a PowerShell window where function Get-YubiKeyCertificate is executed](./examples/Get-YubiKeyCertificate.png)
 
 ## Keep up to date
 
-* [Associated Blogpost](https://blog.darrenjrobinson.com/get-certificates-from-a-yubikey-using-powershell)
-* [Visit my blog](https://blog.darrenjrobinson.com)
-* ![](http://twitter.com/favicon.ico)[Follow darrenjrobinson](https://twitter.com/darrenjrobinson)
+- [Associated Blogpost](https://blog.darrenjrobinson.com/get-certificates-from-a-yubikey-using-powershell)
+- [Visit my blog](https://blog.darrenjrobinson.com)
+- ![Twitter Icon](http://twitter.com/favicon.ico)[Follow darrenjrobinson](https://twitter.com/darrenjrobinson)
